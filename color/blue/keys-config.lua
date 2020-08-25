@@ -730,14 +730,14 @@ function hotkeys:init(args)
 			{ env.mod }, "Escape", awful.tag.history.restore,
 			{ description = "Go previos tag", group = "Tag navigation" }
 		},
-		{
-			{ env.mod }, "Right", awful.tag.viewnext,
-			{ description = "View next tag", group = "Tag navigation" }
-		},
-		{
-			{ env.mod }, "Left", awful.tag.viewprev,
-			{ description = "View previous tag", group = "Tag navigation" }
-		},
+		-- {
+		-- 	{ env.mod }, "Right", awful.tag.viewnext,
+		-- 	{ description = "View next tag", group = "Tag navigation" }
+		-- },
+		-- {
+		-- 	{ env.mod }, "Left", awful.tag.viewprev,
+		-- 	{ description = "View previous tag", group = "Tag navigation" }
+		-- },
 
 		{
 			{ env.mod }, "t", function() redtitle.toggle(client.focus) end,

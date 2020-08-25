@@ -9,11 +9,11 @@
 -- With  checker as 'curl_imap' curl request will be used, just fill up other fields accordings example below,
 -- but beware storing you passwords in plain text.
 
-local mymaillist = {}
+-- local mymaillist = {}
 
---local mymaillist = {
+local mymaillist = {
 --	{ checker = "script", script = "/home/user/Documents/scripts/mail/mail-script.py" },
---	{ checker = "curl_imap", mail = "username@gmail.com", password = "userpass", server = "imap.gmail.com" },
---}
+	-- { checker = "curl_imap", mail = "user@gmail.com", password = "userpass", server = "imap.gmail.com" },
+}
 
 return mymaillist

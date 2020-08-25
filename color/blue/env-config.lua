@@ -25,17 +25,17 @@ function env:init(args)
 
 	-- environment vars
 	self.theme = args.theme or "red"
-	self.terminal = args.terminal or "urxvt"
+	self.terminal = args.terminal or "kitty"
 	self.mod = args.mod or "Mod4"
 	self.fm = args.fm or "nemo"
 	self.mail = args.mail or "thunderbird"
-	self.player = args.player or "pragha"
-	self.updates = args.updates or "bash -c 'pacman -Qu | grep -v ignored | wc -l'"
+	self.player = args.player or "mpd"
+	self.updates = "bash -c 'pacman -Qu | grep -v ignored | wc -l'" or args.updates
 	self.home = os.getenv("HOME")
 	self.themedir = awful.util.get_configuration_dir() .. "themes/" .. self.theme
 
 	-- boolean defaults is pain
-	self.sloppy_focus = args.sloppy_focus or false
+	self.sloppy_focus = args.sloppy_focus or true
 	self.color_border_focus = args.color_border_focus or false
 	self.set_slave = args.set_slave == nil and true or false
 	self.set_center = args.set_center or false

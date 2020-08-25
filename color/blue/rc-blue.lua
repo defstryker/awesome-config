@@ -262,8 +262,8 @@ awful.screen.connect_for_each_screen(
 				separator,
 				env.wrapper(mail.widget, "mail", mail.buttons),
 				separator,
-				env.wrapper(kbindicator.widget, "keyboard", kbindicator.buttons),
-				separator,
+				-- env.wrapper(kbindicator.widget, "keyboard", kbindicator.buttons),
+				-- separator,
 				env.wrapper(sysmon.widget.network, "network"),
 				separator,
 				env.wrapper(sysmon.widget.cpuram, "cpuram", sysmon.buttons.cpuram),
@@ -330,3 +330,4 @@ if redflat.startup.is_startup then
 	local autostart = require("color.blue.autostart-config") -- load file with autostart application list
 	autostart.run()
 end
+

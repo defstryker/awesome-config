@@ -1,3 +1,6 @@
 [submodule "redflat"]
 	path = redflat
 	url = https://github.com/worron/redflat.git
+[submodule "collision"]
+	path = collision
+	url = https://github.com/Elv13/collision
